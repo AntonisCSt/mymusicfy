@@ -6,7 +6,6 @@ MyMusicFy is a Python application that processes and analyzes music metadata fro
 
 - Retrieve detailed statistics about a specific artist.
 - Get genre-based statistics, including popularity and album distribution.
-- Analyze explicit song distribution.
 - Calculate average tracks per album.
 
 ## Dataset
