@@ -1,6 +1,9 @@
 # MyMusicFy
 
-MyMusicFy is a Python application that processes and analyzes music metadata from the Music Metadata Zip files to produce interesting statistics about artists, albums, and songs.
+<img src="doc_files/logo.png" alt="Title" style="width:50%;">
+
+
+MyMusicFy is company (imaginary) that made a Python script that processes and analyzes music metadata from the Music Metadata Zip files to produce interesting statistics about artists, albums, and songs.
 
 ## Features
 
