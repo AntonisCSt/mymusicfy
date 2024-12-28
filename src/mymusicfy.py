@@ -68,6 +68,24 @@ class MyMusicFy:
     def get_average_tracks_per_album(self) -> float:
         """
         Calculate the average number of tracks per album.
-        :return: The average number of tracks per album.
+
+        :return: The average number of tracks per album as a float. 
+                 Returns 0.0 if there are no albums or the 'total_tracks' column is empty.
+        :raises ValueError: If the 'albums' attribute is not a DataFrame or lacks the 'total_tracks' column.
         """
-        return self.albums["total_tracks"].mean()
+        if not hasattr(self, 'albums'):
+            raise AttributeError("The 'albums' attribute is missing from the object.")
+        
+        if "total_tracks" not in self.albums.columns:
+            raise ValueError("The 'albums' DataFrame must contain a 'total_tracks' column.")
+
+        if self.albums.empty:
+            return 0.0
+
+        # Calculate the average, handling potential NaN values
+        average_tracks = self.albums["total_tracks"].dropna().mean()
+
+        # Return 0.0 if there are no valid values in the 'total_tracks' column
+        return average_tracks if not pd.isna(average_tracks) else 0.0
+    
+    
