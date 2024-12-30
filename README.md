@@ -3,7 +3,7 @@
 <img src="doc_files/logo.png" alt="Title" style="width:50%;">
 
 
-MyMusicFy is company (imaginary) that made a Python script that processes and analyzes music metadata from the Music Metadata Zip files to produce interesting statistics about artists, albums, and songs.
+MyMusicFy is a company (imaginary) that made a Python script/tool, the mymusicfy-analysis, that processes and analyzes music metadata from the Music Metadata Zip files to produce interesting statistics about artists, albums, and songs.
 
 ## Features
 
